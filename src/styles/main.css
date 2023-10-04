@@ -1,0 +1,71 @@
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url("../imgs/wall.png");
+  background-size: 200px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 90px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 5px solid #ffd700;
+}
+
+.menu-lives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.panel {
+  display: flex;
+  gap: 2rem;
+
+  height: 100%;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.panel-row{
+  display: flex;
+  gap: 1rem;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid #000000; */
+  background: url("../imgs/janela-sem-ralph.png");
+  background-size: cover;
+  /* background-color: #1aeaa5; */
+}
+
+.square:hover {
+  background-color: #15c489;
+  transition-duration: 0.5s;
+}
+
+.enemy {
+  background: url("../imgs/janela-ralph.png");
+  background-size: cover;
+}
